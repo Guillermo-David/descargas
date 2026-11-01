@@ -25,7 +25,8 @@ Los instaladores no llevan firma digital (cuesta un dinero que prefiero ahorrarm
 Cada archivo tiene una huella SHA-256. Si la de tu descarga coincide con la publicada, el archivo es exactamente el que subí, sin cortes ni cambios por el camino.
 
 1. Busca la huella publicada:
-   - En las apps con **SHA256SUMS.txt** (Toggly, PartScreen), ábrelo: hay una línea por archivo. El nombre de la línea lleva la versión (p. ej. `Toggly-0.1.0-setup.exe`), así que fíjate en la de `setup` o la de `portable` según lo que bajaste.
+   - En las apps con **SHA256SUMS.txt** (Toggly, PartScreen, Pildoras), ábrelo: hay una línea por archivo. El nombre de la línea lleva la versión (p. ej. `Toggly-0.1.0-setup.exe`), así que fíjate en la de `setup` o la de `portable` según lo que bajaste.
+   - En **Pildoras**, el SHA256SUMS.txt trae dos líneas con la misma huella: `Pildoras-<versión>.exe` y `Pildoras.exe` (el mismo archivo con dos nombres); vale cualquiera.
    - En el resto, la huella aparece junto a cada archivo en la página de la release (`sha256:…`).
 2. Calcula la huella de tu archivo. En PowerShell, desde la carpeta de descargas:
    ```powershell
